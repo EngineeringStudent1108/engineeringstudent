@@ -1,0 +1,620 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #d3c2c2;
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: #000000;
+    height: 70px;
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo a {
+    text-decoration: none;
+    float: left;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 20px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 25px;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    background: black;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a i {
+    margin: 5px;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+    border-radius: 5px;
+}
+
+nav ul li a i:hover {
+    color: cyan;
+}
+
+nav ul ul li a:hover {
+    color: cyan;
+    box-shadow: none;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid cyan;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.3s;
+}
+
+nav ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+.show,
+.icons,
+input {
+    padding-right: 0px;
+    display: none;
+}
+
+
+/* HEADER IMAGE */
+
+.headerimg img {
+    margin-top: 70px;
+    width: 100%;
+}
+
+
+/* CONTENT */
+
+section {
+    border: 2px solid black;
+}
+
+section h2 a {
+    text-decoration: none;
+    margin: 15px;
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+}
+
+section h2 a:hover {
+    color: rgb(0, 17, 255);
+}
+
+section .text p {
+    color: black;
+    font-size: 20px;
+}
+
+.text p a span {
+    color: black;
+}
+
+.text p a span:hover {
+    color: red;
+}
+
+
+/* HTML */
+
+.html {
+    margin: 10px;
+    width: 97%;
+    padding: 2px;
+}
+
+.html a img {
+    margin: 5px;
+    float: left;
+    width: 110px;
+    height: 130px;
+}
+
+.html .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.html .text p a {
+    text-decoration: none;
+}
+
+
+/* CSS */
+
+.css {
+    margin: 10px;
+    width: 98%;
+    padding: 2px;
+}
+
+.css a img {
+    margin: 5px;
+    float: left;
+    width: 90px;
+    height: 120px;
+}
+
+.css .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.css .text p a {
+    text-decoration: none;
+}
+
+
+/* JS */
+
+.js {
+    margin: 10px;
+    width: 98%;
+    padding: 2px;
+}
+
+.js a img {
+    margin: 5px;
+    float: left;
+    width: 120px;
+    height: 120px;
+}
+
+.js .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.js .text p a {
+    text-decoration: none;
+}
+
+
+/* PHP */
+
+.php {
+    margin: 10px;
+    width: 98%;
+    padding: 2px;
+}
+
+.php a img {
+    margin: 5px;
+    float: left;
+    width: 160px;
+    height: 80px;
+}
+
+.php .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.php .text p a {
+    text-decoration: none;
+}
+
+
+/* MARIADB */
+
+.mariadb {
+    margin: 10px;
+    width: 98%;
+    padding: 2px;
+}
+
+.mariadb a img {
+    margin: 5px;
+    float: left;
+    width: 170px;
+    height: 80px;
+}
+
+.mariadb .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.mariadb .text p a {
+    text-decoration: none;
+}
+
+
+/* CPP */
+
+.cpp {
+    margin: 10px;
+    width: 98%;
+    padding: 2px;
+}
+
+.cpp a img {
+    margin: 5px;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.cpp .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.cpp .text p a {
+    text-decoration: none;
+}
+
+
+/* KOTLIN */
+
+.kotlin {
+    margin: 10px;
+    width: 98%;
+    padding: 2px;
+}
+
+.kotlin a img {
+    margin: 5px;
+    float: left;
+    width: 200px;
+    height: 80px;
+}
+
+.kotlin .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.kotlin .text p a {
+    text-decoration: none;
+}
+
+
+/* C-SHARP */
+
+.csharp {
+    margin: 10px;
+    width: 98%;
+    padding: 2px;
+}
+
+.csharp a img {
+    margin: 5px;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.csharp .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.csharp .text p a {
+    text-decoration: none;
+}
+
+
+/* RUST */
+
+.rust {
+    margin: 10px;
+    width: 98%;
+    padding: 2px;
+}
+
+.rust a img {
+    margin: 5px;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.rust .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.rust .text p a {
+    text-decoration: none;
+}
+
+
+/* SWIFT */
+
+.swift {
+    margin: 10px;
+    width: 98%;
+    padding: 2px;
+}
+
+.swift a img {
+    margin: 5px;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.swift .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.swift .text p a {
+    text-decoration: none;
+}
+
+
+/* MYSQL */
+
+.mysql {
+    margin: 10px;
+    width: 98%;
+    padding: 2px;
+}
+
+.mysql a img {
+    margin: 5px;
+    float: left;
+    width: 160px;
+    height: 100px;
+}
+
+.mysql .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.mysql .text p a {
+    text-decoration: none;
+}
+
+
+/* GO */
+
+.go {
+    margin: 10px;
+    width: 98%;
+    padding: 2px;
+}
+
+.go a img {
+    margin: 5px;
+    float: left;
+    width: 160px;
+    height: 70px;
+}
+
+.go .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.go .text p a {
+    text-decoration: none;
+}
+
+
+/* PYTHON */
+
+.python {
+    margin: 10px;
+    width: 98%;
+    padding: 2px;
+}
+
+.python a img {
+    margin: 5px;
+    float: left;
+    width: 160px;
+    height: 80px;
+}
+
+.python .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.python .text p a {
+    text-decoration: none;
+}
+
+
+/* SCALA */
+
+.scala {
+    margin: 10px;
+    width: 98%;
+    padding: 2px;
+}
+
+.scala a img {
+    margin: 5px;
+    float: left;
+    width: 160px;
+    height: 90px;
+}
+
+.scala .text {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.scala .text p a {
+    text-decoration: none;
+}
+
+
+/* GO TOP BTN */
+
+.gotop {
+    position: fixed;
+    bottom: 60px;
+    right: 3%;
+}
+
+.gotop a i {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.gotop a i:hover {
+    color: #33ffff;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+footer .text {
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    background-color: black;
+}
+
+
+/* RESPONSIVE */
+
+@media all and (max-width:1060px) {
+    nav {
+        width: 100%;
+    }
+    nav ul {
+        margin-right: 0px;
+        float: left;
+    }
+    nav .logo {
+        padding-left: 2%;
+        width: 100%;
+    }
+    nav ul li,
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+    nav ul ul {
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav ul ul li {
+        border-bottom: 0px;
+    }
+    nav ul ul a {
+        padding-left: 40px;
+    }
+    .show {
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover {
+        color: cyan;
+    }
+    .icons {
+        display: block;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul li a:hover {
+        box-shadow: none;
+    }
+    .show+a,
+    ul {
+        display: none;
+    }
+    [id^=btn]:checked+ul {
+        display: block;
+    }
+    .gotop a .fa-arrow-circle-up {
+        font-size: 40px;
+    }
+}

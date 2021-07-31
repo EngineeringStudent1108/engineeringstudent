@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #3d2d2d;
+}
+
+
+/* NAVIGATION BAR */
+
+
+/* NAVIGATION BAR */
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: #000000;
+    height: 70px;
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo a {
+    text-decoration: none;
+    float: left;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 20px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    background: black;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a i {
+    margin: 5px;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+    border-radius: 5px;
+}
+
+nav ul li a i:hover {
+    color: cyan;
+}
+
+nav ul ul li a:hover {
+    color: cyan;
+    box-shadow: none;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid cyan;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.3s;
+}
+
+nav ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+.show,
+.icons,
+input {
+    display: none;
+}
+
+
+/* GO TOP BTN */
+
+.gotop {
+    position: fixed;
+    bottom: 60px;
+    right: 3%;
+}
+
+.gotop a i {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.gotop a i:hover {
+    color: #33ffff;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+footer .text {
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    background-color: black;
+}
+
+
+/* RESPONSIVE */
+
+@media all and (max-width:1060px) {
+    nav ul {
+        margin-right: 0px;
+        float: left;
+    }
+    nav .logo {
+        padding-left: 2%;
+        width: 100%;
+    }
+    nav ul li,
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+    nav ul ul {
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav ul ul li {
+        border-bottom: 0px;
+    }
+    nav ul ul a {
+        padding-left: 40px;
+    }
+    .show {
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover {
+        color: cyan;
+    }
+    .icons {
+        display: block;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul li a:hover {
+        box-shadow: none;
+    }
+    .show+a,
+    ul {
+        display: none;
+    }
+    [id^=btn]:checked+ul {
+        display: block;
+    }
+    .gotop a .fa-arrow-circle-up {
+        font-size: 40px;
+    }
+}
+
+
+/* FIRST YEAR */
+
+section {
+    border: 3px solid red;
+    background-color: #33ffff;
+}
+
+.name h1 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-decoration: underline rgb(0, 0, 0);
+    width: 100%;
+}
+
+.name h2 a {
+    font-size: 25px;
+    margin-left: 30%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.name h2 a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.1s;
+}
+
+.name h2 a i:hover {
+    color: rgb(255, 255, 255);
+}
+
+.first .name .sub p a {
+    margin-left: 40%;
+    font-size: 20px;
+}
+
+.sub p a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.fa-book {
+    color: rgb(0, 0, 0);
+}
+
+.fa-file-edit {
+    color: #000000;
+}
+
+.fa-file-pdf {
+    color: #000000;
+}
+
+.sub p a {
+    margin-left: 500px;
+    color: #000000;
+    font-size: 20px;
+}
+
+
+/* PROGRAMMING LANGUAGE */
+
+.name1 h1 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-decoration: underline rgb(0, 0, 0);
+    width: 100%;
+}
+
+.name1 h2 a {
+    font-size: 25px;
+    margin-left: 15%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.sub p a {
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+
+/* CONTENT */
+
+h2 {
+    color: red;
+}
